@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+<?import java.net.URL?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Views.MenuView"
+            prefHeight="400.0" prefWidth="600.0">
+    <stylesheets>
+        <URL value="@/assets/css/main.css" />
+    </stylesheets>
+    <BorderPane fx:id="MenuSelection"  styleClass="Background">
+        <top>
+            <HBox>
+                <Text styleClass="Title" fx:id="PageName">Menu</Text>
+            </HBox>
+        </top>
+        <center>
+            <GridPane>
+                <Button styleClass="MenuButton" GridPane.columnIndex="2" GridPane.rowIndex="1">Make a Lobby</Button>
+                <Button styleClass="MenuButton" GridPane.columnIndex="2" GridPane.rowIndex="2">Joins a Lobby</Button>
+                <Button styleClass="MenuButton" GridPane.columnIndex="3" GridPane.rowIndex="1">GameCreation</Button>
+                <Button styleClass="MenuButton" GridPane.columnIndex="3" GridPane.rowIndex="2" onMouseClicked="#QuitApplication">Quit</Button>
+            <ImageView>
+<!--            <Image fx:id="welcomingImage"/>-->
+            </ImageView>
+            </GridPane>
+        </center>
+        <bottom>
+
+        </bottom>
+    </BorderPane>
+
+</AnchorPane>
