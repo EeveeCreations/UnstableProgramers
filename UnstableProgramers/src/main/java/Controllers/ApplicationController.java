@@ -16,7 +16,9 @@ public class ApplicationController extends Application {
     static ApplicationController applicationController;
 
     //    Attributes
-    private Parent root;
+    private Scene scene;
+    private static Stage primairystage;
+
 
 
     //   Make an Instance
@@ -40,12 +42,19 @@ public class ApplicationController extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        root = fxmlLoading("menu");
+        applicationController = new ApplicationController();
+
+//        Stage
+        primaryStage = new Stage();
+        primaryStage.setMinHeight(550);
+        primaryStage.setMinWidth(800);
+
+
         primaryStage.setTitle("Unstable Programmers");
 
 //        Scene
-        primaryStage.setScene(new Scene(root, 800, 550));
-
+        scene = new Scene(fxmlLoad("menu"));
+        primaryStage.setScene(scene);
 
         primaryStage.show();
     }
@@ -53,11 +62,9 @@ public class ApplicationController extends Application {
 // Stop and starting of game
 //===================================================================
 
-    //    Stop
-    @Override
-    public void stop() throws Exception {
-        super.stop();
-    }
+   public void stop(){
+        System.exit(0);
+   }
 
     //    Start
     public static void main(String[] args) {
@@ -68,7 +75,7 @@ public class ApplicationController extends Application {
 // Change screen
 //===================================================================
 
-    public Parent fxmlLoading(String fxml) throws IOException {
+    public Parent fxmlLoad(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ApplicationController.class.getClassLoader().getResource("fxml/" + fxml + ".fxml"));
         return fxmlLoader.load();
     }

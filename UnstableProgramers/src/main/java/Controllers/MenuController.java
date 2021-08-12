@@ -47,14 +47,7 @@ public class MenuController {
 //===================================================================
 
     public void QuitApplication(){
-        try {
             applicationController.stop();
-        } catch (ExceptionOnStop e)
-            {
-                e.getMessage();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
 }
