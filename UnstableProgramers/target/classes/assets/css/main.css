@@ -1,0 +1,60 @@
+/*Imports*/
+
+:root{
+    /*Font & height Texts*/
+    /*--primFont:;*/
+    /*--readFont:;*/
+    /*--BoldFont:;*/
+
+    --titleSize: 22px;
+    --textSize: 14px;
+    --iconHight: 18px;
+
+    /*Colors*/
+    --primColor: #7125c0;
+    --seconColor: #5af330;
+    --thirdColor: #1bd786;
+
+    --primColor_light:#a754ff;
+    --seconColor_light: #81f561;
+    --thirdColor_light: #67fabb;
+
+    --warningColor: #d2147f;
+    --selectedColor: #eae70f;
+
+    --smokeyBlack: #1c1c1c;
+    --smokeyWhite: #e1e1e1;
+
+
+}
+
+
+/*Basic classes ---------------------------------------  */
+
+.Title{
+    -fx-font-size: var(--titleSize) ;
+}
+
+.Background{
+    -fx-background-color: var(--smokeyBlack);
+}
+GridPane .MainPane{
+    -fx-background-color: var(--smokeyBlack);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    -fx-text-fill: var(--smokeyWhite)
+
+}
+
+
+/*Menu screen --------------------------------------- */
+
+.MenuButton{
+    -fx-border-width:0;
+    -fx-border-color:none;
+    -fx-font-size:var(--textSize);
+    -fx-text-fill: var(--smokeyWhite);
+    -fx-height:30px;
+    -fx-width: 80px;
+    -fx-background-color: var(--primColor_light)
+
+
+}

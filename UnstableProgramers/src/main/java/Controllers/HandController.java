@@ -5,16 +5,25 @@ public class HandController {
     private final int MAX_CARDS = 7;
     private final int MIN_CARDS = 1;
 
+    static HandController handController;
 
+    //    Needed Controllers
     private CardController cardController;
     private PlayerController playerController;
 
-//    Work with instances
-//    ToDo: Make inttances in all Controllers
+    //   Make an Instance
 
-//     public HandController getInstance(){
-//
-//     }
+    public static HandController getInstance() {
+        if (handController == null) {
+            handController = new HandController();
+        }
+        return handController;
+    }
+
+    public HandController() {
+        cardController = CardController.getInstance();
+        playerController = PlayerController.getInstance();
+    }
 
 //===================================================================
 // Destroy a card
@@ -31,7 +40,6 @@ public class HandController {
 //===================================================================
 // Play a card
 //===================================================================
-
 
 
 }
