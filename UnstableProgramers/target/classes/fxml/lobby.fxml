@@ -6,9 +6,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="Controllers.LobbyController"
             prefHeight="400.0" prefWidth="600.0">
+    <stylesheets>
+        <URL value="@/assets/css/main.css" />
+    </stylesheets>
+    <BorderPane fx:id="MenuSelection"  styleClass="Background">
+        <top>
+            <HBox>
+                <Text styleClass="Title">Lobby</Text>
+            </HBox>
+        </top>
+        <center>
+        </center>
+        <bottom>
 
+        </bottom>
+    </BorderPane>
 </AnchorPane>

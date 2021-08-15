@@ -3,9 +3,9 @@ package Controllers;
 public class PlayerController {
 
     //    Needed Controllers
-    private LobbyController lobbyController;
-    private HandController handController;
-    private StableController stableController;
+    LobbyController lobbyController;
+    HandController handController;
+    StableController stableController;
 
     static PlayerController playerController;
 
@@ -19,9 +19,9 @@ public class PlayerController {
     }
 
     public PlayerController() {
-        handController = HandController.getInstance();
-        lobbyController = LobbyController.getInstance();
-        stableController = StableController.getInstance();
+        this.handController = HandController.getInstance();
+        this.lobbyController = LobbyController.getInstance();
+        this.stableController = StableController.getInstance();
     }
 
 //===================================================================

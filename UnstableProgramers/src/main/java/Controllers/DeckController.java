@@ -26,8 +26,8 @@ public class DeckController {
     }
 
     public DeckController() {
-        gameController = GameController.getInstance();
-        playerController = PlayerController.getInstance();
+//        gameController = GameController.getInstance();
+//        playerController = PlayerController.getInstance();
     }
 
 //===================================================================

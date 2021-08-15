@@ -10,14 +10,14 @@ import java.io.IOException;
 
 public class ApplicationController extends Application {
 
-    private static GameController gameController;
-    private static FirebaseController fireBaseController;
+    GameController gameController;
+    FirebaseController fireBaseController;
 
     static ApplicationController applicationController;
 
     //    Attributes
     private Scene scene;
-    private static Stage primairystage;
+    private static Stage primairyStage;
 
 
 
@@ -31,8 +31,6 @@ public class ApplicationController extends Application {
     }
 
     public ApplicationController() {
-        gameController = GameController.getInstance();
-        fireBaseController = FirebaseController.getInstance();
     }
 
 //===================================================================
@@ -99,6 +97,10 @@ public class ApplicationController extends Application {
 // Update To Firebase
 //===================================================================
 
+    public void DataHandler(){
+        this.gameController = GameController.getInstance();
+        this.fireBaseController = FirebaseController.getInstance();
+    }
 
 //===================================================================
 // Private to player

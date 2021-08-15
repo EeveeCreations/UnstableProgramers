@@ -18,8 +18,8 @@ public class StableController {
     }
 
     public StableController() {
-        cardController = CardController.getInstance();
-        playerController = PlayerController.getInstance();
+        this.cardController = CardController.getInstance();
+        this.playerController = PlayerController.getInstance();
     }
 //===================================================================
 // Upgrade

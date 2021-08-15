@@ -1,11 +1,15 @@
 package Controllers;
 
+import Views.LobbyView;
+
 public class LobbyController {
 
     //    Needed Controllers
-    private FirebaseController fireBaseController;
-    private PlayerController playerController;
-    private GameController gameController;
+    FirebaseController fireBaseController;
+    PlayerController playerController;
+    GameController gameController;
+
+    LobbyView lobbyView;
 
     static LobbyController lobbyController;
 
@@ -19,10 +23,14 @@ public class LobbyController {
     }
 
     public LobbyController() {
-//        fireBaseController = FirebaseController.getInstance();
-//        gameController = GameController.getInstance();
-//        playerController = PlayerController.getInstance();
+//        TODO: Findout why applicatiion doesnt run without this commented
+//        this.lobbyView = LobbyView.getInstance();
+//        this.fireBaseController = FirebaseController.getInstance();
+//        this.gameController = GameController.getInstance();
+//        this.playerController = PlayerController.getInstance();
     }
+
+
 //===================================================================
 // Create Lobby
 //===================================================================
@@ -31,7 +39,25 @@ public class LobbyController {
 //===================================================================
 // Enter Lobby
 //===================================================================
+    public void joingame(String gameCode, String playerName) {
+        if(checkIfCodeExcists(gameCode) &&
+        checkIfPlayerNameExists(playerName)){
 
+        }
+        else {
+            //TODO: set an alert to send  player back
+        }
+    }
+
+    private boolean checkIfPlayerNameExists(String PlayerName) {
+        boolean check = false;
+        return check;
+    }
+
+    private boolean checkIfCodeExcists(String gameCode) {
+        boolean check = false;
+        return check;
+    }
 
 //===================================================================
 // Delete Lobby

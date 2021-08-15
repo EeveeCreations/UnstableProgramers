@@ -5,9 +5,9 @@ import Models.Game;
 public class CardController {
 
     //Needed Controllers
-    private DeckController deckController;
-    private PlayerController playerController;
-    private GameController gameController;
+    DeckController deckController;
+    PlayerController playerController;
+    GameController gameController;
 
     static CardController cardController;
 
@@ -18,8 +18,8 @@ public class CardController {
     }
 
     public CardController() {
-        deckController = DeckController.getInstance();
-        playerController = PlayerController.getInstance();
-        gameController = GameController.getInstance();
+        this.deckController = DeckController.getInstance();
+        this.playerController = PlayerController.getInstance();
+        this.gameController = GameController.getInstance();
     }
 }

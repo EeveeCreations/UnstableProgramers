@@ -22,14 +22,14 @@
     <BorderPane fx:id="MenuSelection"  styleClass="Background">
         <top>
             <HBox>
-                <Text styleClass="Title" fx:id="PageName">Menu</Text>
+                <Text styleClass="Title">Menu</Text>
             </HBox>
         </top>
         <center>
-            <GridPane>
-                <Button styleClass="MenuButton" GridPane.columnIndex="2" GridPane.rowIndex="1">Make a Lobby</Button>
-                <Button styleClass="MenuButton" GridPane.columnIndex="2" GridPane.rowIndex="2">Joins a Lobby</Button>
-                <Button styleClass="MenuButton" GridPane.columnIndex="3" GridPane.rowIndex="1">GameCreation</Button>
+            <GridPane styleClass="MenuPane">
+                <Button styleClass="MenuButton" GridPane.columnIndex="2" GridPane.rowIndex="1" onMouseClicked="#startCreateNewGame">Make a Lobby</Button>
+                <Button styleClass="MenuButton" GridPane.columnIndex="2" GridPane.rowIndex="2" onMouseClicked="#startJoiningAGame">Joins a Lobby</Button>
+                <Button styleClass="MenuButton" GridPane.columnIndex="3" GridPane.rowIndex="1" onMouseClicked="#openAboutMe">GameCreation</Button>
                 <Button styleClass="MenuButton" GridPane.columnIndex="3" GridPane.rowIndex="2" onMouseClicked="#QuitApplication">Quit</Button>
             <ImageView>
 <!--            <Image fx:id="welcomingImage"/>-->

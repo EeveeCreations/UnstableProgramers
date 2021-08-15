@@ -33,6 +33,7 @@
 
 .Title{
     -fx-font-size: var(--titleSize) ;
+    -fx-text-fill: var(--seconColor_light);
 }
 
 .Background{
@@ -46,6 +47,9 @@ GridPane .MainPane{
 
 
 /*Menu screen --------------------------------------- */
+.MenuPane{
+    -fx-background-color: var(--smokeyBlack);
+}
 
 .MenuButton{
     -fx-border-width:0;

@@ -8,8 +8,8 @@ public class HandController {
     static HandController handController;
 
     //    Needed Controllers
-    private CardController cardController;
-    private PlayerController playerController;
+    CardController cardController;
+    PlayerController playerController;
 
     //   Make an Instance
 
@@ -21,8 +21,8 @@ public class HandController {
     }
 
     public HandController() {
-        cardController = CardController.getInstance();
-        playerController = PlayerController.getInstance();
+        this.cardController = CardController.getInstance();
+        this.playerController = PlayerController.getInstance();
     }
 
 //===================================================================

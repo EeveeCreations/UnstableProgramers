@@ -4,8 +4,8 @@ public class FirebaseController {
     static FirebaseController firebaseController;
 
     //    Needed Controllers
-    private ApplicationController applicationController;
-    private LobbyController lobbyController;
+    ApplicationController applicationController;
+    LobbyController lobbyController;
 
     //   Make an Instance
 
@@ -17,8 +17,8 @@ public class FirebaseController {
     }
 
     public FirebaseController() {
-//        applicationController = ApplicationController.getInstance();
-//        lobbyController = LobbyController.getInstance();
+//        this.applicationController = ApplicationController.getInstance();
+//        this.lobbyController = LobbyController.getInstance();
     }
 
 //===================================================================
