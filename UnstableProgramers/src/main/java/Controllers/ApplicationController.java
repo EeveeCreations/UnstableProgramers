@@ -17,7 +17,7 @@ public class ApplicationController extends Application {
 
     //    Attributes
     private Scene scene;
-    private static Stage primairyStage;
+    private static Stage primStage;
 
 
 
@@ -47,7 +47,7 @@ public class ApplicationController extends Application {
         primaryStage.setMinHeight(550);
         primaryStage.setMinWidth(800);
 
-
+        primStage = primaryStage;
         primaryStage.setTitle("Unstable Programmers");
 
 //        Scene
@@ -79,7 +79,11 @@ public class ApplicationController extends Application {
     }
 
     public void show(String fxmlFile) {
-
+        try {
+            primStage.setScene(new Scene(fxmlLoad(fxmlFile)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 

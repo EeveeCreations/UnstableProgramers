@@ -1,6 +1,5 @@
 /*Imports*/
-
-:root{
+root{
     /*Font & height Texts*/
     /*--primFont:;*/
     /*--readFont:;*/
@@ -25,26 +24,25 @@
     --smokeyBlack: #1c1c1c;
     --smokeyWhite: #e1e1e1;
 
-
 }
 
-
 /*Basic classes ---------------------------------------  */
+Hbox{
+    -fx-pref-height: 120px;
+}
 
 .Title{
+    -fx-text-alignment: center;
     -fx-font-size: var(--titleSize) ;
     -fx-text-fill: var(--seconColor_light);
 }
 
-.Background{
-    -fx-background-color: var(--smokeyBlack);
-}
-GridPane .MainPane{
-    -fx-background-color: var(--smokeyBlack);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+AnchorPane, GridPane {
+    -fx-background-color: #1c1c1c;
+    /*-fx-background-color: var(--smokeyBlack);*/
     -fx-text-fill: var(--smokeyWhite)
 
 }
-
 
 /*Menu screen --------------------------------------- */
 .MenuPane{

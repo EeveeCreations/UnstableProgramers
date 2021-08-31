@@ -14,14 +14,14 @@
 <?import java.net.URL?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Views.MenuView"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="Views.MenuView">
     <stylesheets>
         <URL value="@/assets/css/main.css" />
     </stylesheets>
-    <BorderPane fx:id="MenuSelection"  styleClass="Background">
+    <BorderPane fx:id="MenuSection" styleClass="Background" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="400" minWidth="600">
         <top>
-            <HBox>
+            <HBox prefHeight="120">
                 <Text styleClass="Title">Menu</Text>
             </HBox>
         </top>

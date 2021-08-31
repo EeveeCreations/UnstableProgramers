@@ -16,7 +16,8 @@
    <stylesheets>
       <URL value="@/assets/css/main.css" />
    </stylesheets>
-   <BorderPane fx:id="MenuSelection"  styleClass="Background">
+   <BorderPane fx:id="MenuSelection" styleClass="Background" maxHeight="-Infinity" maxWidth="-Infinity"
+                                                  minHeight="720" minWidth="1280">>
       <top>
          <HBox>
             <Text styleClass="Title">Game</Text>

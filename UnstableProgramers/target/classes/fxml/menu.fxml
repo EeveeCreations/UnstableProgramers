@@ -19,9 +19,10 @@
     <stylesheets>
         <URL value="@/assets/css/main.css" />
     </stylesheets>
-    <BorderPane fx:id="MenuSelection"  styleClass="Background">
+    <BorderPane fx:id="MenuSection" styleClass="Background" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="720" minWidth="1280">
         <top>
-            <HBox>
+            <HBox prefHeight="120">
                 <Text styleClass="Title">Menu</Text>
             </HBox>
         </top>

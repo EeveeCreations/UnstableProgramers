@@ -1,9 +1,7 @@
 package Controllers;
 
-import Exeptions.ExceptionOnStop;
+import Views.CreateView;
 import Views.MenuView;
-
-import java.io.IOException;
 
 public class MenuController {
     static MenuController menuController;
@@ -11,6 +9,7 @@ public class MenuController {
     //    Needed Controllers
     ApplicationController applicationController;
     LobbyController lobbyController;
+    CreateView createView;
     MenuView menuView;
 
     //   Make an Instance
@@ -24,6 +23,7 @@ public class MenuController {
 
     public MenuController() {
 //        this.menuView = MenuView.getInstance();
+        this.createView = CreateView.getInstance();
         this.applicationController = ApplicationController.getInstance();
         this.lobbyController = LobbyController.getInstance();
     }
@@ -31,12 +31,9 @@ public class MenuController {
 //===================================================================
 // Switch to new Screens
 //===================================================================
-    public void changeToCreateScreen() throws IOException {
-        applicationController.fxmlLoad("create");
-    }
 
-    public void showAboutMe() throws IOException {
-        applicationController.fxmlLoad("about");
+    public void openAboutMe() {
+        applicationController.show("about");
     }
 
 
@@ -44,15 +41,17 @@ public class MenuController {
 // Go to Create a new Lobby
 //===================================================================
 
-    public void openCreateAGame() throws IOException {
-        applicationController.fxmlLoad("create");
+    public void openCreateAGame(){
+        applicationController.show("create");
+        createView.showNewGameOptions();
     }
 
     //===================================================================
 // Go to join a player
 //===================================================================
-    public void openJoinGame() throws IOException {
-        applicationController.fxmlLoad("create");
+    public void openJoinGame(){
+        applicationController.show("create");
+        createView.showJoinGameOptions();
     }
 
 

@@ -13,20 +13,27 @@
             fx:controller="Views.CreateView"
             prefHeight="400.0" prefWidth="600.0">
     <stylesheets>
-        <URL value="@/assets/css/main.css" />
+        <URL value="@/assets/css/main.css"/>
     </stylesheets>
-    <BorderPane styleClass="Background">
-        <top>
+
+    <BorderPane styleClass="Background" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="720" minWidth="1280">
+<!--                prefWidth="${stack.width}" prefHeight="${stack.height}"-->
+    <top>
             <HBox>
                 <Text styleClass="Title">Create a Character</Text>
             </HBox>
         </top>
         <center>
-            <TextField fx:id="PlayerName"></TextField>
-            <Button fx:id="GameButton"></Button>
-            <Button fx:id="JoinGameButton"></Button>
+            <GridPane>
+                <TextField fx:id="PlayerName" promptText="Your player name" GridPane.rowIndex="1"></TextField>
+                <TextField fx:id="GameCode" promptText="The game code" GridPane.rowIndex="1"></TextField>
+                <Button fx:id="GameButton" onMouseClicked="#createANewGame" GridPane.rowIndex="2">Create a game</Button>
+                <Button fx:id="JoinGameButton" onMouseClicked="#JoinAGame" GridPane.rowIndex="2">Join the game!</Button>
+            </GridPane>
         </center>
         <bottom>
+            <Button fx:id="menu" onMouseClicked="#returnToMenu">Return to main Menu</Button>
 
         </bottom>
     </BorderPane>

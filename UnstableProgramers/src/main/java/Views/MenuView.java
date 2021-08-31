@@ -20,9 +20,9 @@ public class MenuView {
 //        return menuView;
 //    }
 //
-//    public MenuView(){
-//
-//    }
+    public MenuView(){
+    }
+
     private GameController gameController;
 //  Attributes
 
@@ -31,12 +31,8 @@ public class MenuView {
 // Go to about me.
 //===================================================================
     public void openAboutMe() {
-        try {
-            menuController.showAboutMe();
-        } catch (IOException e) {
-            e.printStackTrace();
+            menuController.openAboutMe();
         }
-    }
 
 
 //===================================================================
@@ -44,22 +40,14 @@ public class MenuView {
 //===================================================================
 
     public void startCreateNewGame() {
-        try {
             menuController.openCreateAGame();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+       }
 
 //===================================================================
-// Join a Game
+// Join a Games
 //===================================================================
     public void startJoiningAGame() {
-        try {
             menuController.openJoinGame();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
 
